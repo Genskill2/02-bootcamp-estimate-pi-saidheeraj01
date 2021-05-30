@@ -5,7 +5,7 @@ def wallis(i):
     piestim=1
     for j in range(1,i+1):
         piestim=piestim*(4*i*i/(4*i*i-1))
-    return 2*piestim
+    return (2*piestim)
 
 from random import *
 def monte_carlo(i):
@@ -14,12 +14,12 @@ def monte_carlo(i):
     for j in range(i):
         x=random()
         y=random()
-        if x*x+y*y<=1:
+        if(x*x+y*y)<=1:
             nodescircle+=1
             nodessquare+=1
         else :
             nodessquare+=1
-    return 4*nodescircle/nodessquare
+    return (4*nodescircle/nodessquare)
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
