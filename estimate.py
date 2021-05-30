@@ -19,7 +19,7 @@ def monte_carlo(i):
             nodessquare+=1
         else :
             nodessquare+=1
-        return (4*nodescircle/nodessquare)
+    return 4*nodescircle/nodessquare
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
