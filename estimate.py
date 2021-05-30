@@ -4,7 +4,8 @@ import unittest
 def wallis(i):
     piestim=1
     for j in range(1,i+1):
-        piestim=piestim*(4*i*i/(4*i*i-1))
+        t=((4*i*i)/((4*i*i)-1))
+        piestim=piestim*t
     return (2*piestim)
 
 from random import *
